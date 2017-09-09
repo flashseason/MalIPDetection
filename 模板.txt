@@ -1,0 +1,135 @@
+预约流程（普通专家）：
+GET /common/arrangement/notice.do
+POST /common/chooseHospital/chooseHospital.do
+GET /common/chooseExpert/chooseExpert.do
+GET /common/dept/deptList.do
+POST /dept/getDept.do
+GET /common/arrangement/scheduleByDept.do
+POST /arrangement/scheduleByDept.do
+GET /common/arrangement/arrangementList.do
+POST /arrangement/getTimeList.do
+GET /common/reserve/reserveConfirm.do
+POST /reserve/reserveConfirm.do
+POST /reserve/reserve.do
+
+预约流程（知名专家）：
+GET /common/arrangement/notice.do
+POST /common/chooseHospital/chooseHospital.do
+GET /common/chooseExpert/chooseExpert.do
+GET /common/chooseExpert/expertNotice.do
+POST /common/dept/deptList.do
+POST /dept/getDept.do
+GET /common/arrangement/scheduleByDept.do
+POST /arrangement/scheduleByDept.do
+GET /common/arrangement/arrangementList.do
+POST /arrangement/getTimeList.do
+GET /common/reserve/reserveConfirm.do
+POST /reserve/reserveConfirm.do
+POST /reserve/reserve.do
+
+预约流程（特色门诊）：
+GET /common/arrangement/notice.do
+POST /common/chooseHospital/chooseHospital.do
+GET /common/chooseExpert/chooseExpert.do
+GET /common/specialty/specialClinic.do
+POST /specialty/getDepts.do
+GET /common/specialty/specialSchedule.do
+POST /specialty/specialSchedule.do
+GET /common/arrangement/arrangementList.do
+POST /arrangement/getTimeList.do
+GET /common/reserve/reserveConfirm.do
+POST /reserve/reserveConfirm.do
+POST /reserve/reserve.do
+
+
+取消预约：
+GET /common/patientinfo/patientinfo.do 个人中心
+GET /common/reserve/reserveList.do  预约列表
+POST /reserve/getReserveList.do  
+GET /common/reserve/reserveDetail.do 预约详情
+POST /reserve/cancelReserve.do
+
+就诊人：
+
+1.新增就诊人
+GET /patientinfo/patientinfo.do
+GET /common/patientinfo/patientMgr.do 
+GET /patientinfo/patientinfo.do
+GET /common/patientinfo/addPatient.do
+POST /patientinfo/checkIdCard.do
+POST /patientinfo/create.do
+
+2.设置默认就诊人
+GET /patientinfo/patientinfo.do
+GET /common/patientinfo/patientMgr.do 
+GET /common/patientinfo/editPatient.do
+POST /patientinfo/getPatientInfoById.do
+POST /patientinfo/setDefault.do
+
+3.绑卡
+GET /patientinfo/patientinfo.do
+GET /common/patientinfo/patientMgr.do 
+GET /common/patientinfo/editPatient.do
+POST /patientinfo/getPatientInfoById.do
+GET /common/patientinfo/bind.do
+POST /patientinfo/bindHosCard.do
+
+4.删除就诊人
+GET /patientinfo/patientinfo.do
+GET /common/patientinfo/patientMgr.do 
+GET /common/patientinfo/editPatient.do
+POST /patientinfo/getPatientInfoById.do
+GET /patientinfo/deletePatient.do
+
+报告查询：
+1.门诊：
+GET/report/init.do
+GET /patientinfo/patientinfo.do
+GET /common/report/reportType.do 
+GET /common/report/reportList.do
+GET /report/getReportList.do
+GET /common/report/reportDetail.do
+GET /report/getReportDeatil.do
+
+2.住院
+GET/report/init.do
+GET /patientinfo/patientinfo.do
+GET /common/report/reportType.do 
+GET /common/report/reportList.do
+GET /report/getReportInList.do
+GET /report/getReportDeatil.do
+
+
+费用查询：
+1.门诊预交金：
+GET /fee/init.do
+GET /common/fee/index.do
+GET /common/fee/balance.do
+GET /fee/patientBalance.do
+2.住院预交金
+GET /fee/init.do
+GET /common/fee/index.do
+GET /common/fee/hosBalance.do
+POST /fee/inBalance.do
+
+3.门诊费用
+GET /fee/init.do
+GET /common/fee/index.do
+GET /common/fee/outpFeeList.do
+POST /fee/feeList.do
+GET /common/fee/feeDetail.do
+POST /fee/feeDetail.do
+
+4.住院费用
+GET /fee/init.do
+GET /common/fee/index.do
+GET /common/fee/inpFeeList.do
+POST /fee/feeList.do
+GET /common/fee/feeDetail.do
+POST /fee/feeDetail.do
+
+候诊队列：
+GET /queue/init.do
+GET /patientinfo/patientinfo.do
+GET /common/queue/reserveQueueList.do
+POST /queue/getQueueList.do
