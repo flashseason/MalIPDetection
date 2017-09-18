@@ -1,5 +1,5 @@
-bbbb
-Ô¤Ô¼Á÷³Ì£¨ÆÕÍ¨×¨¼Ò£©£º
+bbbbccc
+é¢„çº¦æµç¨‹ï¼ˆæ™®é€šä¸“å®¶ï¼‰ï¼š
 GET /common/arrangement/notice.do
 POST /common/chooseHospital/chooseHospital.do
 GET /common/chooseExpert/chooseExpert.do
@@ -13,7 +13,7 @@ GET /common/reserve/reserveConfirm.do
 POST /reserve/reserveConfirm.do
 POST /reserve/reserve.do
 
-Ô¤Ô¼Á÷³Ì£¨ÖªÃû×¨¼Ò£©£º
+é¢„çº¦æµç¨‹ï¼ˆçŸ¥åä¸“å®¶ï¼‰ï¼š
 GET /common/arrangement/notice.do
 POST /common/chooseHospital/chooseHospital.do
 GET /common/chooseExpert/chooseExpert.do
@@ -28,7 +28,7 @@ GET /common/reserve/reserveConfirm.do
 POST /reserve/reserveConfirm.do
 POST /reserve/reserve.do
 
-Ô¤Ô¼Á÷³Ì£¨ÌØÉ«ÃÅÕï£©£º
+é¢„çº¦æµç¨‹ï¼ˆç‰¹è‰²é—¨è¯Šï¼‰ï¼š
 GET /common/arrangement/notice.do
 POST /common/chooseHospital/chooseHospital.do
 GET /common/chooseExpert/chooseExpert.do
@@ -43,16 +43,16 @@ POST /reserve/reserveConfirm.do
 POST /reserve/reserve.do
 
 
-È¡ÏûÔ¤Ô¼£º
-GET /common/patientinfo/patientinfo.do ¸öÈËÖĞĞÄ
-GET /common/reserve/reserveList.do  Ô¤Ô¼ÁĞ±í
+å–æ¶ˆé¢„çº¦ï¼š
+GET /common/patientinfo/patientinfo.do ä¸ªäººä¸­å¿ƒ
+GET /common/reserve/reserveList.do  é¢„çº¦åˆ—è¡¨
 POST /reserve/getReserveList.do  
-GET /common/reserve/reserveDetail.do Ô¤Ô¼ÏêÇé
+GET /common/reserve/reserveDetail.do é¢„çº¦è¯¦æƒ…
 POST /reserve/cancelReserve.do
 
-¾ÍÕïÈË£º
+å°±è¯Šäººï¼š
 
-1.ĞÂÔö¾ÍÕïÈË
+1.æ–°å¢å°±è¯Šäºº
 GET /patientinfo/patientinfo.do
 GET /common/patientinfo/patientMgr.do 
 GET /patientinfo/patientinfo.do
@@ -60,14 +60,14 @@ GET /common/patientinfo/addPatient.do
 POST /patientinfo/checkIdCard.do
 POST /patientinfo/create.do
 
-2.ÉèÖÃÄ¬ÈÏ¾ÍÕïÈË
+2.è®¾ç½®é»˜è®¤å°±è¯Šäºº
 GET /patientinfo/patientinfo.do
 GET /common/patientinfo/patientMgr.do 
 GET /common/patientinfo/editPatient.do
 POST /patientinfo/getPatientInfoById.do
 POST /patientinfo/setDefault.do
 
-3.°ó¿¨
+3.ç»‘å¡
 GET /patientinfo/patientinfo.do
 GET /common/patientinfo/patientMgr.do 
 GET /common/patientinfo/editPatient.do
@@ -75,15 +75,15 @@ POST /patientinfo/getPatientInfoById.do
 GET /common/patientinfo/bind.do
 POST /patientinfo/bindHosCard.do
 
-4.É¾³ı¾ÍÕïÈË
+4.åˆ é™¤å°±è¯Šäºº
 GET /patientinfo/patientinfo.do
 GET /common/patientinfo/patientMgr.do 
 GET /common/patientinfo/editPatient.do
 POST /patientinfo/getPatientInfoById.do
 GET /patientinfo/deletePatient.do
 
-±¨¸æ²éÑ¯£º
-1.ÃÅÕï£º
+æŠ¥å‘ŠæŸ¥è¯¢ï¼š
+1.é—¨è¯Šï¼š
 GET/report/init.do
 GET /patientinfo/patientinfo.do
 GET /common/report/reportType.do 
@@ -92,7 +92,7 @@ GET /report/getReportList.do
 GET /common/report/reportDetail.do
 GET /report/getReportDeatil.do
 
-2.×¡Ôº
+2.ä½é™¢
 GET/report/init.do
 GET /patientinfo/patientinfo.do
 GET /common/report/reportType.do 
@@ -101,19 +101,19 @@ GET /report/getReportInList.do
 GET /report/getReportDeatil.do
 
 
-·ÑÓÃ²éÑ¯£º
-1.ÃÅÕïÔ¤½»½ğ£º
+è´¹ç”¨æŸ¥è¯¢ï¼š
+1.é—¨è¯Šé¢„äº¤é‡‘ï¼š
 GET /fee/init.do
 GET /common/fee/index.do
 GET /common/fee/balance.do
 GET /fee/patientBalance.do
-2.×¡ÔºÔ¤½»½ğ
+2.ä½é™¢é¢„äº¤é‡‘
 GET /fee/init.do
 GET /common/fee/index.do
 GET /common/fee/hosBalance.do
 POST /fee/inBalance.do
 
-3.ÃÅÕï·ÑÓÃ
+3.é—¨è¯Šè´¹ç”¨
 GET /fee/init.do
 GET /common/fee/index.do
 GET /common/fee/outpFeeList.do
@@ -121,7 +121,7 @@ POST /fee/feeList.do
 GET /common/fee/feeDetail.do
 POST /fee/feeDetail.do
 
-4.×¡Ôº·ÑÓÃ
+4.ä½é™¢è´¹ç”¨
 GET /fee/init.do
 GET /common/fee/index.do
 GET /common/fee/inpFeeList.do
@@ -129,7 +129,7 @@ POST /fee/feeList.do
 GET /common/fee/feeDetail.do
 POST /fee/feeDetail.do
 
-ºòÕï¶ÓÁĞ£º
+å€™è¯Šé˜Ÿåˆ—ï¼š
 GET /queue/init.do
 GET /patientinfo/patientinfo.do
 GET /common/queue/reserveQueueList.do
